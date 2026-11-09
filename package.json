@@ -1,0 +1,48 @@
+{
+  "name": "dsh-session-sounds",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "Plays a synthesized chime, or sends a WeChat / ntfy push, when a session finishes or needs user input.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XinpengWei/dsh-session-sounds.git"
+  },
+  "homepage": "https://github.com/XinpengWei/dsh-session-sounds#readme",
+  "bugs": {
+    "url": "https://github.com/XinpengWei/dsh-session-sounds/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness"
+  ]
+}

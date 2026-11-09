@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Sounds",
+    "description": "Chime when a session finishes or needs input; supports WeChat / ntfy phone push."
+  }
+}
